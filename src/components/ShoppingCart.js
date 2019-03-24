@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Panel, Table, Button, Glyphicon } from 'react-bootstrap';
 import store from '../store';
-
+import { removeFromCart } from '../actionCreators';
 const styles = {
   footer: {
     fontWeight: 'bold'
@@ -52,10 +52,7 @@ class ShoppingCart extends Component {
   }
 
   removeFromCart(product) {
-    store.dispatch({
-      type: 'REMOVE_TO_CART',
-      payload: product
-    })
+    store.dispatch(removeFromCart(product))
   }
 }
 
