@@ -13,7 +13,7 @@ const reducer = (state, action) => {
     console.log(state.cart, action.payload);
     return {
       ...state,
-      cart: state.cart.filter((e) => e != action.payload)
+      cart: state.cart.filter(e => e != action.payload)
     }
   }
   return state;
