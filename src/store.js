@@ -25,6 +25,6 @@ const logger = store => next => action => {
 }
 
 export default createStore(
-  combineReducers({ cart, products }),  // State reducers
+  combineReducers({ cart, products }),  // State reducers. Manages part of the state.
   applyMiddleware(logger, thunk) // Middleware logger and thunk
 );
