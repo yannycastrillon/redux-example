@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
 import { connect } from 'react-redux';
+import { addToCart } from '../actionCreators';
 
 const styles = {
   products: {
@@ -42,7 +43,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     addToCart(product) {
-      dispatch.addToCart(product);
+      dispatch(addToCart(product));
     },
   }
 }
