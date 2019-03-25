@@ -2,8 +2,6 @@ import React from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
 import { connect } from 'react-redux';
 
-import { addToCart } from '../actionCreators';
-
 const styles = {
   products: {
     display: 'flex',
